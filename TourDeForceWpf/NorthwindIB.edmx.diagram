@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1f6edd1f368a442fb4a1633bd50d1d63" Name="Diagram1" ZoomLevel="98">
+        <EntityTypeShape EntityType="NorthwindIBModel.Customer" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindIBModel.Employee" Width="1.5" PointX="3.625" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindIBModel.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindIBModel.OrderDetail" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindIBModel.Product" Width="1.5" PointX="8" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindIBModel.Supplier" Width="1.5" PointX="5.75" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="NorthwindIBModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindIBModel.FK_Employee_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindIBModel.FK_Order_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindIBModel.FK_OrderDetail_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindIBModel.FK_OrderDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindIBModel.FK_Product_Supplier" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
