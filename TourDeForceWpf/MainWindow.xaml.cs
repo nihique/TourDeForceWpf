@@ -25,5 +25,13 @@ namespace TourDeForceWpf
             InitializeComponent();
             Loaded += delegate { DataContext = new MainWindowViewModel(); };
         }
+
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
+            System.Windows.Data.CollectionViewSource employeeViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("employeeViewSource")));
+            // Load data by setting the CollectionViewSource.Source property:
+            // employeeViewSource.Source = [generic data source]
+        }
     }
 }
