@@ -3,7 +3,7 @@
 //    Any changes made to this code will be lost the next time this 
 //    code is regenerated.
 // 
-//    Generated at: 19. 12. 2012 11:15:15
+//    Generated at: 19. 12. 2012 11:58:56
 //    DevForce version: 7.0.2.0
 //    Template version: 2.1.4
 // ------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ using IbEm   = IdeaBlade.EntityModel;
 using IbCore = IdeaBlade.Core;
 using IbVal  = IdeaBlade.Validation;
 
-[module: IbCore.IdeaBladeLicense("/+1F9umu21KVfvLG8TiMMc9VzCwTgt53wQBxrPS+tUogDgWef4K2H++cPwC4utuK")]
+[module: IbCore.IdeaBladeLicense("pR8Y7avlc4GQ2j4q9BXl3tcgicOqqIrF/8nnd07AGvA+/O0Fn48iqAOKY3VE8SrE")]
 
 namespace TourDeForceWpf { 
 
@@ -557,21 +557,21 @@ namespace TourDeForceWpf {
 
     #region Navigation properties
 
-    /// <summary>Gets the Employee1. </summary>
+    /// <summary>Gets the DirectReports. </summary>
     [DataMember]
     [Bindable(false)]
-    [Display(Name="Employee1", AutoGenerateField=false)]
-    public IbEm.RelatedEntityList<Employee> Employee1 {
-      get { return PropertyMetadata.Employee1.GetValue(this); }
+    [Display(Name="DirectReports", AutoGenerateField=false)]
+    public IbEm.RelatedEntityList<Employee> DirectReports {
+      get { return PropertyMetadata.DirectReports.GetValue(this); }
     }
 
-    /// <summary>Gets or sets the Employee2. </summary>
+    /// <summary>Gets or sets the Manager. </summary>
     [DataMember]
     [Bindable(false)]
-    [Display(Name="Employee2", AutoGenerateField=false)]
-    public Employee Employee2 {
-      get { return PropertyMetadata.Employee2.GetValue(this); }
-      set { PropertyMetadata.Employee2.SetValue(this, value); }
+    [Display(Name="Manager", AutoGenerateField=false)]
+    public Employee Manager {
+      get { return PropertyMetadata.Manager.GetValue(this); }
+      set { PropertyMetadata.Manager.SetValue(this, value); }
     }
 
     /// <summary>Gets the Order. </summary>
@@ -641,16 +641,16 @@ namespace TourDeForceWpf {
       public static readonly IbEm.DataEntityProperty<Employee, string> PhotoPath = new IbEm.DataEntityProperty<Employee, string>("PhotoPath", true, false, IbEm.ConcurrencyStrategy.None, false, null);
 
       /// <summary>The ReportsToEmployeeID <see cref="T:IbEm.DataEntityProperty"/>. </summary>
-      public static readonly IbEm.DataEntityProperty<Employee, System.Nullable<int>> ReportsToEmployeeID = new IbEm.DataEntityProperty<Employee, System.Nullable<int>>("ReportsToEmployeeID", true, false, IbEm.ConcurrencyStrategy.None, false, "Employee2");
+      public static readonly IbEm.DataEntityProperty<Employee, System.Nullable<int>> ReportsToEmployeeID = new IbEm.DataEntityProperty<Employee, System.Nullable<int>>("ReportsToEmployeeID", true, false, IbEm.ConcurrencyStrategy.None, false, "Manager");
 
       /// <summary>The RowVersion <see cref="T:IbEm.DataEntityProperty"/>. </summary>
       public static readonly IbEm.DataEntityProperty<Employee, int> RowVersion = new IbEm.DataEntityProperty<Employee, int>("RowVersion", false, false, IbEm.ConcurrencyStrategy.None, false, null);
 
-      /// <summary>The Employee1 <see cref="T:IbEm.NavigationEntityProperty"/>. </summary>
-      public static readonly IbEm.NavigationListEntityProperty<Employee, Employee> Employee1 = new IbEm.NavigationListEntityProperty<Employee, Employee>("Employee1", true, "FK_Employee_Employee", IbEm.QueryDirection.ToRole1);
+      /// <summary>The DirectReports <see cref="T:IbEm.NavigationEntityProperty"/>. </summary>
+      public static readonly IbEm.NavigationListEntityProperty<Employee, Employee> DirectReports = new IbEm.NavigationListEntityProperty<Employee, Employee>("DirectReports", true, "FK_Employee_Employee", IbEm.QueryDirection.ToRole1);
 
-      /// <summary>The Employee2 <see cref="T:IbEm.NavigationEntityProperty"/>. </summary>
-      public static readonly IbEm.NavigationScalarEntityProperty<Employee, Employee> Employee2 = new IbEm.NavigationScalarEntityProperty<Employee, Employee>("Employee2", true, "FK_Employee_Employee", IbEm.QueryDirection.ToRole2);
+      /// <summary>The Manager <see cref="T:IbEm.NavigationEntityProperty"/>. </summary>
+      public static readonly IbEm.NavigationScalarEntityProperty<Employee, Employee> Manager = new IbEm.NavigationScalarEntityProperty<Employee, Employee>("Manager", true, "FK_Employee_Employee", IbEm.QueryDirection.ToRole2);
 
       /// <summary>The Order <see cref="T:IbEm.NavigationEntityProperty"/>. </summary>
       public static readonly IbEm.NavigationListEntityProperty<Employee, Order> Order = new IbEm.NavigationListEntityProperty<Employee, Order>("Order", true, "FK_Order_Employee", IbEm.QueryDirection.ToRole1);
@@ -678,8 +678,8 @@ namespace TourDeForceWpf {
       public const String PhotoPath = "PhotoPath";
       public const String ReportsToEmployeeID = "ReportsToEmployeeID";
       public const String RowVersion = "RowVersion";
-      public const String Employee1 = "Employee1";
-      public const String Employee2 = "Employee2";
+      public const String DirectReports = "DirectReports";
+      public const String Manager = "Manager";
       public const String Order = "Order";
     }
     #endregion EntityPropertyNames
@@ -1618,7 +1618,7 @@ namespace TourDeForceWpf {
   /// <summary>
   /// A generated class that returns the relations between entities in this model.
   /// </summary>
-  [IbCore.IdeaBladeGuid("16019576-97c2-42d8-9ae7-5b903b3cb225", "2.1.4")]
+  [IbCore.IdeaBladeGuid("b8ce5c69-b155-4783-9863-7f514421ae9a", "2.1.4")]
   public partial class EntityRelations : IbEm.IEntityRelations {
 
     /// Explicit static constructor ensures static fields are initialized.

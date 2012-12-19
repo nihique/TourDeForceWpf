@@ -93,6 +93,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="NorthwindIB.IB.Designer.cs">
       <DependentUpon>NorthwindIB.edmx.tt</DependentUpon>
     </Compile>

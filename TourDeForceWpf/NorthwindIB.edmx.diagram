@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="1f6edd1f368a442fb4a1633bd50d1d63" Name="Diagram1" ZoomLevel="98">
         <EntityTypeShape EntityType="NorthwindIBModel.Customer" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="NorthwindIBModel.Employee" Width="1.5" PointX="3.625" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindIBModel.Employee" Width="1.875" PointX="3.625" PointY="6.125" IsExpanded="true" />
         <EntityTypeShape EntityType="NorthwindIBModel.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="NorthwindIBModel.OrderDetail" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
         <EntityTypeShape EntityType="NorthwindIBModel.Product" Width="1.5" PointX="8" PointY="6.625" IsExpanded="true" />

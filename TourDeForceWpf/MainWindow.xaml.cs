@@ -23,6 +23,7 @@ namespace TourDeForceWpf
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += delegate { DataContext = new MainWindowViewModel(); };
         }
     }
 }

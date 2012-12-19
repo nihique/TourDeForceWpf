@@ -296,8 +296,8 @@
           <Property Name="PhotoPath" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="ReportsToEmployeeID" Type="Int32" />
           <Property Name="RowVersion" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Employee1" Relationship="NorthwindIBModel.FK_Employee_Employee" FromRole="Employee" ToRole="Employee1" />
-          <NavigationProperty Name="Employee2" Relationship="NorthwindIBModel.FK_Employee_Employee" FromRole="Employee1" ToRole="Employee" />
+          <NavigationProperty Name="DirectReports" Relationship="NorthwindIBModel.FK_Employee_Employee" FromRole="Employee" ToRole="Employee1" />
+          <NavigationProperty Name="Manager" Relationship="NorthwindIBModel.FK_Employee_Employee" FromRole="Employee1" ToRole="Employee" />
           <NavigationProperty Name="Order" Relationship="NorthwindIBModel.FK_Order_Employee" FromRole="Employee" ToRole="Order" />
         </EntityType>
         <EntityType Name="Order">
