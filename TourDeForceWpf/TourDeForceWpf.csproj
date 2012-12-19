@@ -79,29 +79,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Customer.cs">
-      <DependentUpon>NorthwindIB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Employee.cs">
-      <DependentUpon>NorthwindIB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NorthwindIB.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindIB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Order.cs">
-      <DependentUpon>NorthwindIB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="OrderDetail.cs">
-      <DependentUpon>NorthwindIB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs">
-      <DependentUpon>NorthwindIB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Supplier.cs">
-      <DependentUpon>NorthwindIB.tt</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -116,15 +93,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NorthwindIB.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindIB.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NorthwindIB.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindIB.edmx</DependentUpon>
+    <Compile Include="NorthwindIB.IB.Designer.cs">
+      <DependentUpon>NorthwindIB.edmx.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -134,21 +104,21 @@
   <ItemGroup>
     <None Include="App.config" />
     <EntityDeploy Include="NorthwindIB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NorthwindIB.Designer.cs</LastGenOutput>
+      <EntityManagerName>.NorthwindIBEntities</EntityManagerName>
+      <CodeGenNamespace>__default__</CodeGenNamespace>
     </EntityDeploy>
-    <None Include="NorthwindIB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>NorthwindIB.Context.cs</LastGenOutput>
-      <DependentUpon>NorthwindIB.edmx</DependentUpon>
-    </None>
     <None Include="NorthwindIB.edmx.diagram">
       <DependentUpon>NorthwindIB.edmx</DependentUpon>
     </None>
-    <None Include="NorthwindIB.tt">
+    <None Include="NorthwindIB.edmx.ReadMe">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindIB.edmx.tt</DependentUpon>
+    </None>
+    <None Include="NorthwindIB.edmx.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthwindIB.edmx</DependentUpon>
-      <LastGenOutput>NorthwindIB.cs</LastGenOutput>
+      <TemplateName>DomainModelTemplate</TemplateName>
+      <LastGenOutput>NorthwindIB.edmx.ReadMe</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

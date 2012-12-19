@@ -222,7 +222,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="NorthwindIBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:ib12="http://www.ideablade.com/edm/2012">
-        <EntityContainer Name="NorthwindIBEntities" p1:LazyLoadingEnabled="true">
+        <EntityContainer Name="NorthwindIBEntities" p1:LazyLoadingEnabled="true" ib12:DevForceEnabled="true">
           <EntitySet Name="Customer" EntityType="NorthwindIBModel.Customer" />
           <EntitySet Name="Employee" EntityType="NorthwindIBModel.Employee" />
           <EntitySet Name="Order" EntityType="NorthwindIBModel.Order" />
